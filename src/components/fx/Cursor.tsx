@@ -47,7 +47,7 @@ export function Cursor() {
       {/* precise dot */}
       <motion.div
         aria-hidden
-        className="pointer-events-none fixed top-0 left-0 z-[9999] mix-blend-difference"
+        className="pointer-events-none fixed top-0 left-0 z-[10002] mix-blend-difference"
         style={{ x: dotX, y: dotY, translateX: "-50%", translateY: "-50%" }}
         animate={{ opacity: visible && !showMedia ? 1 : 0, scale: visible ? 1 : 0.4 }}
         transition={{ duration: 0.2 }}
@@ -58,7 +58,7 @@ export function Cursor() {
       {/* trailing ring */}
       <motion.div
         aria-hidden
-        className="pointer-events-none fixed top-0 left-0 z-[9999] mix-blend-difference"
+        className="pointer-events-none fixed top-0 left-0 z-[10002] mix-blend-difference"
         style={{ x: ringX, y: ringY, translateX: "-50%", translateY: "-50%" }}
         animate={{
           opacity: visible && !showMedia ? 1 : 0,
@@ -88,7 +88,7 @@ export function Cursor() {
         {showMedia && inWindow && (
           <motion.div
             aria-hidden
-            className="pointer-events-none fixed top-0 left-0 z-[9999]"
+            className="pointer-events-none fixed top-0 left-0 z-[10002]"
             style={{ x: ringX, y: ringY, translateX: "-50%", translateY: "-50%" }}
             initial={{ opacity: 0, scale: 0.82 }}
             animate={{ opacity: 1, scale: 1 }}

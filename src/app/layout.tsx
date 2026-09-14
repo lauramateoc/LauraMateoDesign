@@ -5,12 +5,15 @@ import {
   Geist_Mono,
   Instrument_Serif,
 } from "next/font/google";
+import { cookies } from "next/headers";
 import { Cursor } from "@/components/fx/Cursor";
 import { CursorProvider } from "@/components/fx/CursorProvider";
 import { Preloader } from "@/components/fx/Preloader";
 import { SmoothScroll } from "@/components/fx/SmoothScroll";
+import { PasswordGate } from "@/components/PasswordGate";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ACCESS_COOKIE, ACCESS_VALUE } from "@/lib/access";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -38,22 +41,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const cookieStore = await cookies();
+  const unlocked = cookieStore.get(ACCESS_COOKIE)?.value === ACCESS_VALUE;
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable} ${instrumentSerif.variable} cursor-none antialiased`}
       >
         <CursorProvider>
-          <Preloader />
-          <SmoothScroll />
+          <PasswordGate initialUnlocked={unlocked}>
+            <Preloader />
+            <SmoothScroll />
+            <div className="grain" aria-hidden />
+            <SiteNav />
+            <main>{children}</main>
+            <SiteFooter />
+          </PasswordGate>
           <Cursor />
-          <div className="grain" aria-hidden />
-          <SiteNav />
-          <main>{children}</main>
-          <SiteFooter />
         </CursorProvider>
       </body>
     </html>
