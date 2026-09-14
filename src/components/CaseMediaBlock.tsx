@@ -44,12 +44,20 @@ export function CaseMediaBlock({ item, theme = "light", index = 0 }: Props) {
         {item.type === "video" ? (
           <video
             className="h-auto w-full"
-            autoPlay
-            loop
-            muted
+            autoPlay={!item.controls}
+            loop={!item.controls}
+            muted={!item.controls}
+            controls={item.controls}
             playsInline
+            preload="metadata"
             poster={item.poster}
             aria-label={item.alt}
+            onMouseEnter={
+              item.controls
+                ? () => set({ variant: "hover", label: "Play" })
+                : undefined
+            }
+            onMouseLeave={item.controls ? reset : undefined}
           >
             <source src={item.src} type="video/mp4" />
           </video>

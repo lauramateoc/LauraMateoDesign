@@ -1,6 +1,13 @@
 export type CaseMedia =
   | { type: "image"; src: string; alt: string; caption?: string }
-  | { type: "video"; src: string; poster?: string; alt: string; caption?: string }
+  | {
+      type: "video";
+      src: string;
+      poster?: string;
+      alt: string;
+      caption?: string;
+      controls?: boolean;
+    }
   | { type: "vimeo"; id: string; alt: string; caption?: string };
 
 export type CaseStudy = {
@@ -69,10 +76,12 @@ export const caseStudies: CaseStudy[] = [
         alt: "Cupra configurator wide layout",
       },
       {
-        type: "vimeo",
-        id: "1802628576",
+        type: "video",
+        src: "/work/cupra/preview.mp4",
+        poster: "/work/cupra/preview-poster.jpg",
         alt: "Cupra project preview video",
         caption: "Preview",
+        controls: true,
       },
       {
         type: "image",

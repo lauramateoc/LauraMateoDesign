@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CaseMediaBlock } from "@/components/CaseMediaBlock";
 import { Hero } from "@/components/Hero";
 import { WorkList } from "@/components/WorkList";
 import { Marquee } from "@/components/fx/Marquee";
@@ -85,6 +86,20 @@ export default function HomePage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+
+          <div className="mt-16 md:mt-24">
+            <CaseMediaBlock
+              item={{
+                type: "video",
+                src: "/work/cupra/preview.mp4",
+                poster: "/work/cupra/preview-poster.jpg",
+                alt: "Cupra project preview video",
+                caption: "Cupra — Preview",
+                controls: true,
+              }}
+              theme="light"
+            />
           </div>
         </div>
       </section>
