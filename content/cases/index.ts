@@ -258,6 +258,27 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         type: "text",
+        eyebrow: "Future vehicle",
+        heading: "A cabin built around instinct",
+        body: [
+          "The task was not to redesign the car, but to reimagine the role it plays in people’s lives — orchestrating emotion, performance and technology into a cohesive ecosystem.",
+          "Inside the vehicle, the experience is distilled into clear forms: a sculpted console, warm copper light, and a crystalline interface that feels like an extension of Cupra’s instinctive character.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/work/cupra-hux/vehicle-exterior.jpg",
+        alt: "Cupra future vehicle exterior in a dark studio",
+        caption: "Exterior",
+      },
+      {
+        type: "image",
+        src: "/work/cupra-hux/vehicle-interior.jpg",
+        alt: "Cupra future vehicle interior with triangular crystal interface",
+        caption: "Interior",
+      },
+      {
+        type: "text",
         eyebrow: "Outcome",
         heading: "Innovation and emotion, told as one journey",
         body: [
@@ -294,11 +315,11 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "cupra",
     number: "03",
-    title: "Cupra / SEAT Digital Platforms",
+    title: "Cupra Car Configurator",
     shortTitle: "Cupra",
     client: "Cupra / Seat Digital Platforms",
     year: "2023",
-    tagline: "Sculpting a performance brand across its digital ecosystem",
+    tagline: "Reimagining the future of Cupra’s digital experiences",
     cover: "/work/cupra/configurator-1.png",
     accent: "#c9a227",
     theme: "dark",
@@ -308,11 +329,11 @@ export const caseStudies: CaseStudy[] = [
       "UX/UI Design",
       "Visual Design",
     ],
-    details: ["Frog Design", "3 people team", "1 year duration"],
+    details: ["Frog Design", "3 people team", "1.5 year collaboration"],
     intro: [
-      "Initially, our approach involved aligning with digital platforms, conducting field interviews, benchmarking exercises, and conducting a comprehensive brand audit. These efforts were aimed at gaining a deeper understanding of the business landscape and identifying opportunities for innovation.",
-      "The overarching goal of the project was to reimagine and ideate strategic touchpoints within the brand's digital journey. This entailed identifying areas for enhancement in the current digital ecosystem, conceptualizing ways to elevate the brand experience, and creating cohesive narratives across touchpoints.",
-      "Beyond the pursuit of pixel-perfection, this project represented an opportunity to push boundaries, experiment with new ideas, and digitally sculpt the brand's identity to align with its aspiration of being perceived as innovative, youthful, and forward-thinking.",
+      "What could Cupra feel like online if it dared to push its own boundaries? That was the question behind a year and a half of collaboration with Cupra’s digital teams.",
+      "We travelled across the brand’s web touchpoints — the Cupra and SEAT car configurators, Car World and the Cupra City Garage website — looking at each one with fresh eyes and asking how the experience could be better.",
+      "We were never there to build a new website, or to chase pixel perfection. Our role was to open doors: to show Cupra what becomes possible when a brand this bold lets its digital experiences be just as bold.",
     ],
     media: [
       {
@@ -322,49 +343,97 @@ export const caseStudies: CaseStudy[] = [
         alt: "Cupra digital platform motion preview",
       },
       {
+        type: "text",
+        eyebrow: "The approach",
+        heading: "Side by side with the people behind the product",
+        body: [
+          "For eighteen months we worked closely with the product owner of every part of the ecosystem. We listened to their ambitions, their frustrations and the ideas they had never had the time to explore.",
+          "Then we turned those ideas into something tangible — concepts they could see, click through and share inside the organisation. Not specifications, but provocations: a clear picture of where each product could go next.",
+        ],
+      },
+      {
+        type: "text",
+        eyebrow: "01 — Cupra Car Configurator",
+        heading: "From a form to fill in, to a car you want to drive",
+        body: [
+          "The configurator is where desire becomes a decision. We imagined it less as a list of options and more as a showroom: the car centre stage, the name written large behind it, and one clear invitation to begin.",
+        ],
+      },
+      {
         type: "image",
         src: "/work/cupra/configurator-1.png",
-        alt: "Cupra Tavascan configurator interface",
+        alt: "Cupra Tavascan configurator entry screen",
+      },
+      {
+        type: "text",
+        heading: "Every choice, felt instantly",
+        body: [
+          "Version, colour, packs and payment live around the car instead of in a long scrolling page. Each decision changes what you see straight away, and the monthly price stays honest and visible at every step.",
+        ],
       },
       {
         type: "image",
         src: "/work/cupra/configurator-2.png",
-        alt: "Cupra digital platform UI exploration",
+        alt: "Cupra Tavascan configurator payment step",
       },
       {
         type: "image",
         src: "/work/cupra/configurator-wide.png",
-        alt: "Cupra configurator wide layout",
+        alt: "Cupra Tavascan immersive configurator with hotspots",
+        caption: "Configuring directly on the car",
+      },
+      {
+        type: "image",
+        src: "/work/cupra/studies-1.png",
+        alt: "Cupra Tavascan configurator on mobile",
+        caption: "The same experience, in your pocket",
+      },
+      {
+        type: "text",
+        eyebrow: "02 — SEAT Configurator",
+        heading: "Same thinking, a different personality",
+        body: [
+          "SEAT speaks to a different driver: practical, warm, closer to everyday life. We kept the clarity of the Cupra concept but gave it SEAT’s own voice — lighter, friendlier and built for mobile first.",
+          "Motor, colour, wheels, interior and extras became a simple visual journey, with the price building up transparently until the very last tap.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/work/cupra/studies-2.png",
+        alt: "SEAT León mobile configurator flow",
+        caption: "SEAT León configurator",
+      },
+      {
+        type: "text",
+        eyebrow: "03 — Cupra City Garage",
+        heading: "A digital door to a physical place",
+        body: [
+          "Cupra City Garages are not dealerships — they are spaces to meet the brand, its community and its culture. Online, they deserved more than an address and opening hours.",
+          "We imagined each garage’s website as a living extension of the space: upcoming events, the people who run it, the community around it, and a window onto every City Garage around the world.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/work/cupra/studies-3.png",
+        alt: "Cupra City Garage website concept",
+        caption: "Cupra City Garage",
       },
       {
         type: "video",
         src: "/work/cupra/preview.mp4",
         poster: "/work/cupra/preview-poster.jpg",
         alt: "Cupra project preview video",
-        caption: "Preview",
         controls: true,
       },
       {
-        type: "image",
-        src: "/work/cupra/studies-1.png",
-        alt: "Seat Configurator exploration",
-        caption: "Seat Configurator exploration",
-      },
-      {
-        type: "image",
-        src: "/work/cupra/studies-2.png",
-        alt: "Cupra E-configurator",
-        caption: "Cupra E-configurator",
-      },
-      {
-        type: "image",
-        src: "/work/cupra/studies-3.png",
-        alt: "Cupra City Garage",
-        caption: "Cupra City Garage",
+        type: "text",
+        eyebrow: "Outcome",
+        heading: "A glimpse of what’s possible",
+        body: [
+          "Together, these concepts gave every product team a shared vision to rally around — a north star showing how far Cupra’s digital experience could go when it is as fearless as its cars.",
+        ],
       },
     ],
-    footerNote:
-      "Throughout the year-long collaboration, I was deeply involved in shaping various digital products within the web ecosystem, including the Cupra Car Configurator, Seat Car Configurator, the Car World, Cupra City Garage, among others. — If you want to know more info, please contact me :) *These projects are confidential.",
     nextSlug: "correos-express",
   },
   {
