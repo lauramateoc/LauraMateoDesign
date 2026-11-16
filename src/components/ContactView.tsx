@@ -66,7 +66,7 @@ export function ContactView() {
 
           <Reveal delay={0.2}>
             <p className="mono mt-24 max-w-md leading-[1.9] opacity-50">
-              Based in Madrid — working with teams everywhere. Open to product
+              Based in Madrid, working with teams everywhere. Open to product
               design, art direction and interactive experiments.
             </p>
           </Reveal>

@@ -8,7 +8,7 @@ import { about } from "@/content/about";
 import { site } from "@/content/site";
 
 export const metadata = {
-  title: "About — Laura Mateo",
+  title: "About / Laura Mateo",
   description: about.intro,
 };
 

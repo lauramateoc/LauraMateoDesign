@@ -1,6 +1,6 @@
 export const site = {
   name: "Laura Mateo",
-  title: "Laura Mateo — Product Designer / Art Director",
+  title: "Laura Mateo / Product Designer / Art Director",
   description:
     "Product Designer / Art Director focused on narratives and strategy for Interactive Experiences and Digital Products.",
   role: "Interactive designer / Product design",

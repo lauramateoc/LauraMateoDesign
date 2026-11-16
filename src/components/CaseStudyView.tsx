@@ -225,7 +225,7 @@ export function CaseStudyView({
             className="group block px-6 py-24 md:px-10 md:py-36"
           >
             <div className="mx-auto max-w-[1600px]">
-              <p className="mono mb-8 opacity-50">Next project — {next.number}</p>
+              <p className="mono mb-8 opacity-50">Next project / {next.number}</p>
               <Magnetic strength={0.12}>
                 <h2 className="display-xl text-[clamp(2.6rem,11vw,10rem)] transition-opacity group-hover:opacity-70">
                   {next.shortTitle}

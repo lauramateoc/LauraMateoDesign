@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
   const study = getCaseBySlug(slug);
   if (!study) return {};
   return {
-    title: `${study.title} — Laura Mateo`,
+    title: `${study.title} / Laura Mateo`,
     description: study.tagline,
   };
 }

@@ -89,7 +89,7 @@ export function Hero() {
             </motion.span>
           </span>
           <span>
-            Portfolio — {String(caseStudies.length).padStart(2, "0")} Projects
+            Portfolio / {String(caseStudies.length).padStart(2, "0")} Projects
           </span>
         </div>
       </motion.div>

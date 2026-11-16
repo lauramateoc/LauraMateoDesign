@@ -34,7 +34,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "seat-code",
     number: "01",
-    title: "SEAT CODE — Talent Platform",
+    title: "SEAT CODE: Talent Platform",
     shortTitle: "SEAT CODE",
     client: "SEAT CODE",
     year: "2026",
@@ -50,9 +50,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     details: ["Frog Design", "10 weeks", "Webflow delivery"],
     intro: [
-      "SEAT CODE, the digital hub of SEAT S.A., needed its website to catch up with who it had become — a place where talent, creativity and engineering shape the future of mobility. The existing site felt static and disconnected from the culture it was meant to showcase.",
+      "SEAT CODE, the digital hub of SEAT S.A., needed its website to catch up with who it had become: a place where talent, creativity and engineering shape the future of mobility. The existing site felt static and disconnected from the culture it was meant to showcase.",
       "Over a 10-week collaboration at frog, we redefined the role of the website itself: from an information container into a living, CMS-driven ecosystem for talent attraction, culture and growth. Research, benchmarking and stakeholder alignment fed a new information architecture, visual direction and Webflow build.",
-      "A key challenge was balancing creative ambition with Webflow’s constraints. Embracing those limits led to a modular system that protects design quality while letting the client manage and scale the platform independently — including a custom hero video and a handover playbook.",
+      "A key challenge was balancing creative ambition with Webflow’s constraints. Embracing those limits led to a modular system that protects design quality while letting the client manage and scale the platform independently, including a custom hero video and a handover playbook.",
     ],
     media: [
       {
@@ -60,7 +60,7 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Challenge",
         heading: "A site that no longer matched the company",
         body: [
-          "SEAT CODE faced a gap between who they are and how they were perceived digitally. The organization was moving fast — innovation, talent, new products — while the website stayed static, outdated and disconnected from the industry around it.",
+          "SEAT CODE faced a gap between who they are and how they were perceived digitally. The organization was moving fast (innovation, talent, new products) while the website stayed static, outdated and disconnected from the industry around it.",
           "The work was not only a visual redesign. The website had to stop being a container for information and become a living ecosystem: one that attracts talent, shows the culture, and can scale as the team grows.",
         ],
       },
@@ -75,7 +75,7 @@ export const caseStudies: CaseStudy[] = [
         heading: "Ten weeks, from research to a CMS the team can run",
         body: [
           "We started with immersion: benchmark, research and stakeholder alignment, so the site could work as a tool for talent attraction and for the people already inside SEAT CODE.",
-          "Those insights became an information architecture — as-is to to-be — that reorganized content into a structure people can actually navigate. In parallel we set the visual direction in Figma and built it directly in Webflow as a modular, CMS-driven system.",
+          "Those insights became an information architecture, from as-is to to-be, that reorganized content into a structure people can actually navigate. In parallel we set the visual direction in Figma and built it directly in Webflow as a modular, CMS-driven system.",
           "The turning point was Webflow’s own constraints. Instead of fighting them, we designed a modular system that keeps the quality of the design while letting the client update and grow the site without a developer in the loop.",
         ],
       },
@@ -96,7 +96,7 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Hero",
         heading: "A bold first impression",
         body: [
-          "We designed a custom hero film as the first thing you meet. It is there to catch attention and carry the feeling of SEAT CODE — storytelling through motion, not a static banner.",
+          "We designed a custom hero film as the first thing you meet. It is there to catch attention and carry the feeling of SEAT CODE: storytelling through motion, not a static banner.",
           "The same system then holds up on a laptop, a tablet and a phone, so the story stays intact wherever someone lands.",
         ],
       },
@@ -132,18 +132,18 @@ export const caseStudies: CaseStudy[] = [
         heading: "Designing beyond delivery",
         body: [
           "With the site, we wrote a playbook for how to use and manage Webflow: how to update content, and how to adapt pages as the organization changes.",
-          "The playbook is the part that lasts. SEAT CODE can build on the work without waiting for us — not only a finished website, but a team able to shape it over time.",
+          "The playbook is the part that lasts. SEAT CODE can build on the work without waiting for us. Not only a finished website, but a team able to shape it over time.",
         ],
       },
     ],
     footerNote:
-      "The result is a dynamic, future-ready platform that reflects SEAT CODE’s identity, strengthens talent attraction, and enables internal teams to evolve content on their own. *Confidential — frog / Capgemini Invent.",
+      "The result is a dynamic, future-ready platform that reflects SEAT CODE’s identity, strengthens talent attraction, and enables internal teams to evolve content on their own. *Confidential. frog / Capgemini Invent.",
     nextSlug: "cupra-hux",
   },
   {
     slug: "cupra-hux",
     number: "02",
-    title: "Cupra HUX — Driven by Instinct",
+    title: "Cupra HUX: Driven by Instinct",
     shortTitle: "Cupra HUX",
     client: "Cupra",
     year: "2025",
@@ -157,10 +157,10 @@ export const caseStudies: CaseStudy[] = [
       "Product Strategy",
       "Product Conceptualization",
     ],
-    details: ["Frog Design", "Core + extended team", "07/2024 – 12/2025"],
+    details: ["Frog Design", "Core + extended team", "07/2024 to 12/2025"],
     intro: [
       "Following the successful HUX collaboration in 2023, Cupra returned to frog with a clear ambition: push experience design further without losing the brand’s instinctive DNA. The brief was not to redesign the car, but to reimagine the role it plays in people’s lives.",
-      "Through immersion, stakeholder and user research, workshops and co-creation, we translated insights into personas, user stories and a shared experience vision — then made that complex future ecosystem tangible through storyboards and a bold comic narrative.",
+      "Through immersion, stakeholder and user research, workshops and co-creation, we translated insights into personas, user stories and a shared experience vision, then made that complex future ecosystem tangible through storyboards and a bold comic narrative.",
       "The comic became a strategic asset for Cupra: aligning teams, capturing the soul of the brand, and enabling experience-led innovation across markets. Over 160 frames, 1,000+ AI assets and 60+ stakeholders shaped a vision where emotion, technology and performance act as one.",
     ],
     media: [
@@ -170,7 +170,7 @@ export const caseStudies: CaseStudy[] = [
         heading: "Beyond the car, without losing the brand",
         body: [
           "After the HUX collaboration in 2023, Cupra came back with trust and a sharper ambition: push experience design further, and keep the clarity, boldness and instinct that define the brand.",
-          "Mobility was changing, and isolated features were no longer enough. Cupra needed a future experience that could scale across markets, technologies and moments — not a redesigned car, but a new role for the car in people’s lives.",
+          "Mobility was changing, and isolated features were no longer enough. Cupra needed a future experience that could scale across markets, technologies and moments. Not a redesigned car, but a new role for the car in people’s lives.",
         ],
       },
       {
@@ -214,7 +214,7 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Immersion",
         heading: "Characters refined until they felt specific",
         body: [
-          "We built the characters with AI tools, then reworked them every day until the people, the cars and the places felt like one world — not a generic future.",
+          "We built the characters with AI tools, then reworked them every day until the people, the cars and the places felt like one world, not a generic future.",
           "Over five days with the client we traced the paths those characters would take, and locked the concepts we would actually draw.",
         ],
       },
@@ -242,7 +242,7 @@ export const caseStudies: CaseStudy[] = [
         type: "image",
         src: "/work/cupra-hux/frame-03.png",
         alt: "Cupra HUX frame with the in-car interface added",
-        caption: "3 — Interface",
+        caption: "3. Interface",
       },
       {
         type: "image",
@@ -261,7 +261,7 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Future vehicle",
         heading: "A cabin built around instinct",
         body: [
-          "The task was not to redesign the car, but to reimagine the role it plays in people’s lives — orchestrating emotion, performance and technology into a cohesive ecosystem.",
+          "The task was not to redesign the car, but to reimagine the role it plays in people’s lives, orchestrating emotion, performance and technology into a cohesive ecosystem.",
           "Inside the vehicle, the experience is distilled into clear forms: a sculpted console, warm copper light, and a crystalline interface that feels like an extension of Cupra’s instinctive character.",
         ],
       },
@@ -284,7 +284,7 @@ export const caseStudies: CaseStudy[] = [
         body: [
           "We designed and tested the interactions for a future vehicle and for the wider Cupra system, keeping the experience precise enough to feel satisfying and open enough to keep evolving.",
           "The vision joins Cupra’s focus on innovation and technology with human emotion. Two detailed user stories carry that soul, and the comics follow five people through their time with the future car.",
-          "It was presented to the Board. The comic is now a strategic asset — something teams align around, not a deck that gets filed.",
+          "It was presented to the Board. The comic is now a strategic asset: something teams align around, not a deck that gets filed.",
         ],
       },
       {
@@ -303,13 +303,13 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Cupra",
         heading: "“The comic has become a strategic asset.”",
         body: [
-          "“What really stood out was the team’s involvement and the way we worked together. The outcome goes beyond a deliverable — the comic has become a strategic asset for Cupra.”",
+          "“What really stood out was the team’s involvement and the way we worked together. The outcome goes beyond a deliverable. The comic has become a strategic asset for Cupra.”",
           "Pablo de Rivas, Cross Product Strategy & Customer Requirements Manager, Cupra.",
         ],
       },
     ],
     footerNote:
-      "A holistic future experience vision merging innovation & tech with human emotion — presented to the Board and adopted as a strategic driver across Cupra. *Confidential — frog / Capgemini Invent.",
+      "A holistic future experience vision merging innovation & tech with human emotion, presented to the Board and adopted as a strategic driver across Cupra. *Confidential. frog / Capgemini Invent.",
     nextSlug: "cupra",
   },
   {
@@ -332,7 +332,7 @@ export const caseStudies: CaseStudy[] = [
     details: ["Frog Design", "3 people team", "1.5 year collaboration"],
     intro: [
       "What could Cupra feel like online if it dared to push its own boundaries? That was the question behind a year and a half of collaboration with Cupra’s digital teams.",
-      "We travelled across the brand’s web touchpoints — the Cupra and SEAT car configurators, Car World and the Cupra City Garage website — looking at each one with fresh eyes and asking how the experience could be better.",
+      "We travelled across the brand’s web touchpoints (the Cupra and SEAT car configurators, Car World and the Cupra City Garage website), looking at each one with fresh eyes and asking how the experience could be better.",
       "We were never there to build a new website, or to chase pixel perfection. Our role was to open doors: to show Cupra what becomes possible when a brand this bold lets its digital experiences be just as bold.",
     ],
     media: [
@@ -348,12 +348,12 @@ export const caseStudies: CaseStudy[] = [
         heading: "Side by side with the people behind the product",
         body: [
           "For eighteen months we worked closely with the product owner of every part of the ecosystem. We listened to their ambitions, their frustrations and the ideas they had never had the time to explore.",
-          "Then we turned those ideas into something tangible — concepts they could see, click through and share inside the organisation. Not specifications, but provocations: a clear picture of where each product could go next.",
+          "Then we turned those ideas into something tangible: concepts they could see, click through and share inside the organisation. Not specifications, but provocations: a clear picture of where each product could go next.",
         ],
       },
       {
         type: "text",
-        eyebrow: "01 — Cupra Car Configurator",
+        eyebrow: "01 / Cupra Car Configurator",
         heading: "From a form to fill in, to a car you want to drive",
         body: [
           "The configurator is where desire becomes a decision. We imagined it less as a list of options and more as a showroom: the car centre stage, the name written large behind it, and one clear invitation to begin.",
@@ -390,10 +390,10 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         type: "text",
-        eyebrow: "02 — SEAT Configurator",
+        eyebrow: "02 / SEAT Configurator",
         heading: "Same thinking, a different personality",
         body: [
-          "SEAT speaks to a different driver: practical, warm, closer to everyday life. We kept the clarity of the Cupra concept but gave it SEAT’s own voice — lighter, friendlier and built for mobile first.",
+          "SEAT speaks to a different driver: practical, warm, closer to everyday life. We kept the clarity of the Cupra concept but gave it SEAT’s own voice: lighter, friendlier and built for mobile first.",
           "Motor, colour, wheels, interior and extras became a simple visual journey, with the price building up transparently until the very last tap.",
         ],
       },
@@ -405,10 +405,10 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         type: "text",
-        eyebrow: "03 — Cupra City Garage",
+        eyebrow: "03 / Cupra City Garage",
         heading: "A digital door to a physical place",
         body: [
-          "Cupra City Garages are not dealerships — they are spaces to meet the brand, its community and its culture. Online, they deserved more than an address and opening hours.",
+          "Cupra City Garages are not dealerships. They are spaces to meet the brand, its community and its culture. Online, they deserved more than an address and opening hours.",
           "We imagined each garage’s website as a living extension of the space: upcoming events, the people who run it, the community around it, and a window onto every City Garage around the world.",
         ],
       },
@@ -430,7 +430,7 @@ export const caseStudies: CaseStudy[] = [
         eyebrow: "Outcome",
         heading: "A glimpse of what’s possible",
         body: [
-          "Together, these concepts gave every product team a shared vision to rally around — a north star showing how far Cupra’s digital experience could go when it is as fearless as its cars.",
+          "Together, these concepts gave every product team a shared vision to rally around: a north star showing how far Cupra’s digital experience could go when it is as fearless as its cars.",
         ],
       },
     ],
@@ -514,7 +514,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "hyperloop",
     number: "06",
-    title: "Hyperloop TT — Human Sequence",
+    title: "Hyperloop TT: Human Sequence",
     shortTitle: "Hyperloop TT",
     client: "Hyperloop TT",
     year: "2022",
@@ -560,13 +560,13 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     footerNote:
-      "The concept of fetus is something that from the beginning has been the emblem of this project. The fetus reminds us of a bubble — it evokes the connection with the mother, a sense of protection and welcome.",
+      "The concept of fetus is something that from the beginning has been the emblem of this project. The fetus reminds us of a bubble. It evokes the connection with the mother, a sense of protection and welcome.",
     nextSlug: "recrem",
   },
   {
     slug: "recrem",
     number: "07",
-    title: "RECREM — Metadreams",
+    title: "RECREM: Metadreams",
     shortTitle: "RECREM",
     client: "RECREM (Fictional project)",
     year: "2022",
@@ -589,8 +589,8 @@ export const caseStudies: CaseStudy[] = [
       {
         type: "image",
         src: "/work/recrem/hero.png",
-        alt: "RECREM app screens — metadreams",
-        caption: "RECREM — metadreams",
+        alt: "RECREM app screens: metadreams",
+        caption: "RECREM: metadreams",
       },
       {
         type: "image",

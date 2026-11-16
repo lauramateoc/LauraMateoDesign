@@ -90,7 +90,7 @@ export function PasswordGate({
           </div>
 
           <div className="relative my-auto w-full max-w-[1600px] self-center">
-            <p className="mono mb-6 opacity-40">00 — Access</p>
+            <p className="mono mb-6 opacity-40">00 / Access</p>
             <div id="gate-title">
               <SplitText
                 as="h1"

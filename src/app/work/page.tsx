@@ -5,7 +5,7 @@ import { SplitText } from "@/components/fx/SplitText";
 import { caseStudies } from "@/content/cases";
 
 export const metadata = {
-  title: "Work — Laura Mateo",
+  title: "Work / Laura Mateo",
   description: "Selected case studies by Laura Mateo.",
 };
 
@@ -21,7 +21,7 @@ export default function WorkPage() {
 
         <div className="relative">
           <p className="mono mb-8 opacity-50">
-            Index — {String(caseStudies.length).padStart(2, "0")} Projects
+            Index / {String(caseStudies.length).padStart(2, "0")} Projects
           </p>
           <SplitText
             as="h1"

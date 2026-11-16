@@ -125,7 +125,7 @@ function WorkRow({ study, index }: { study: CaseStudy; index: number }) {
             />
           </motion.div>
 
-          {/* inline thumbnail — same frame for every project */}
+          {/* inline thumbnail: same frame for every project */}
           <div className="relative hidden h-20 w-36 shrink-0 overflow-hidden rounded-sm bg-black/[0.04] md:block lg:h-24 lg:w-44">
             <motion.div
               className="absolute inset-0"

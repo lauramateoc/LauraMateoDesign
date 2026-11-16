@@ -25,9 +25,9 @@ export default function HomePage() {
 
         <div className="px-6 pt-24 md:px-10 md:pt-36">
           <div className="mx-auto max-w-[1600px]">
-            <p className="mono mb-10 opacity-40">01 — Approach</p>
+            <p className="mono mb-10 opacity-40">01 / Approach</p>
             <ScrollText
-              text="I design narratives and strategy for interactive experiences and digital products — turning complex ecosystems into something people actually want to touch."
+              text="I design narratives and strategy for interactive experiences and digital products, turning complex ecosystems into something people actually want to touch."
               className="max-w-5xl text-[clamp(1.6rem,4.4vw,3.6rem)] font-medium leading-[1.12] tracking-[-0.04em]"
             />
           </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
         <div className="px-6 pb-12 md:px-10 md:pb-16">
           <div className="mx-auto flex max-w-[1600px] items-end justify-between gap-6">
             <div>
-              <p className="mono mb-6 opacity-40">02 — Selected work</p>
+              <p className="mono mb-6 opacity-40">02 / Selected work</p>
               <SplitText
                 as="h2"
                 text="Case studies"
@@ -69,7 +69,7 @@ export default function HomePage() {
         className="bg-paper px-6 pb-32 text-ink md:px-10 md:pb-44"
       >
         <div className="mx-auto max-w-[1600px]">
-          <p className="mono mb-12 opacity-40">03 — Disciplines</p>
+          <p className="mono mb-12 opacity-40">03 / Disciplines</p>
           <div className="grid gap-10 md:grid-cols-3 md:gap-8">
             {about.disciplines.map((item, index) => (
               <Reveal key={item.title} delay={index * 0.08}>
@@ -95,7 +95,7 @@ export default function HomePage() {
                 src: "/work/cupra/preview.mp4",
                 poster: "/work/cupra/preview-poster.jpg",
                 alt: "Cupra project preview video",
-                caption: "Cupra — Preview",
+                caption: "Cupra / Preview",
                 controls: true,
               }}
               theme="light"
