@@ -22,6 +22,11 @@
 .DS_Store
 *.pem
 
+# local source decks / tooling (not for deploy)
+*.pdf
+.venv-pdf/
+tmp-pdf-extract/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

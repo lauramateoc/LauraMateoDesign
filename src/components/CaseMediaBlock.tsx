@@ -6,8 +6,10 @@ import { useRef } from "react";
 import { useCursor } from "./fx/CursorProvider";
 import type { CaseMedia } from "@/content/cases";
 
+type VisualMedia = Exclude<CaseMedia, { type: "text" }>;
+
 type Props = {
-  item: CaseMedia;
+  item: VisualMedia;
   theme?: "dark" | "light" | "recrem";
   index?: number;
 };

@@ -125,12 +125,12 @@ function WorkRow({ study, index }: { study: CaseStudy; index: number }) {
             />
           </motion.div>
 
-          {/* inline thumbnail — always visible on wide screens */}
-          <div className="hidden h-20 w-36 shrink-0 overflow-hidden rounded-sm md:block lg:h-24 lg:w-44">
+          {/* inline thumbnail — same frame for every project */}
+          <div className="relative hidden h-20 w-36 shrink-0 overflow-hidden rounded-sm bg-black/[0.04] md:block lg:h-24 lg:w-44">
             <motion.div
-              className="h-full w-full"
+              className="absolute inset-0"
               initial={false}
-              animate={{ scale: hovered ? 1.08 : 1 }}
+              animate={{ scale: hovered ? 1.06 : 1 }}
               transition={{ duration: 0.7, ease: EASE }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -138,7 +138,7 @@ function WorkRow({ study, index }: { study: CaseStudy; index: number }) {
                 src={study.cover}
                 alt=""
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-contain"
               />
             </motion.div>
           </div>
@@ -175,13 +175,13 @@ function WorkRow({ study, index }: { study: CaseStudy; index: number }) {
 
         {/* full-width image on narrow screens */}
         <div className="px-6 pb-8 md:hidden">
-          <div className="h-44 w-full overflow-hidden rounded-sm">
+          <div className="relative h-36 w-full overflow-hidden rounded-sm bg-black/[0.04]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={study.cover}
               alt=""
               loading="lazy"
-              className="h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-contain"
             />
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { CaseMediaBlock } from "./CaseMediaBlock";
@@ -63,10 +64,23 @@ export function CaseStudyView({
       <section
         ref={heroRef}
         data-theme="dark"
-        className="relative flex h-[38svh] min-h-[280px] max-h-[380px] flex-col justify-end overflow-hidden bg-ink px-6 pb-8 text-paper md:h-[42svh] md:max-h-[420px] md:px-10 md:pb-10"
+        className="relative flex h-[70svh] min-h-[420px] max-h-[820px] flex-col justify-end overflow-hidden bg-ink px-6 pb-8 text-paper md:px-10 md:pb-12"
       >
-        <ShaderField colors={t.field} />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/60" />
+        {study.cover ? (
+          <motion.div style={{ y: heroY }} className="absolute inset-0 scale-110">
+            <Image
+              src={study.cover}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          </motion.div>
+        ) : (
+          <ShaderField colors={t.field} />
+        )}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/25" />
 
         <motion.div style={{ y: heroY, opacity: heroFade }} className="relative">
           <div className="mono mb-4 flex flex-wrap items-center gap-x-6 gap-y-2 opacity-60">
@@ -149,14 +163,37 @@ export function CaseStudyView({
         className="px-6 pb-24 md:px-10 md:pb-36"
       >
         <div className="mx-auto flex max-w-[1600px] flex-col gap-16 md:gap-28">
-          {study.media.map((item, i) => (
-            <CaseMediaBlock
-              key={`${item.type}-${i}`}
-              item={item}
-              theme={study.theme}
-              index={i}
-            />
-          ))}
+          {study.media.map((item, i) =>
+            item.type === "text" ? (
+              <Reveal key={`text-${i}`}>
+                <div className="mx-auto max-w-3xl">
+                  {item.eyebrow && (
+                    <p className={`mono mb-4 ${t.sub}`}>{item.eyebrow}</p>
+                  )}
+                  <h2 className="text-[clamp(1.8rem,4vw,3.4rem)] font-medium leading-[1.1] tracking-[-0.04em]">
+                    {item.heading}
+                  </h2>
+                  <div className="mt-8 space-y-6">
+                    {item.body.map((paragraph) => (
+                      <p
+                        key={paragraph.slice(0, 40)}
+                        className={`font-serif text-xl leading-[1.55] ${t.body}`}
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            ) : (
+              <CaseMediaBlock
+                key={`${item.type}-${i}`}
+                item={item}
+                theme={study.theme}
+                index={i}
+              />
+            ),
+          )}
         </div>
       </section>
 
@@ -184,6 +221,7 @@ export function CaseStudyView({
               set({ variant: "media", preview: next.cover, label: "Next case" })
             }
             onMouseLeave={reset}
+            onClick={reset}
             className="group block px-6 py-24 md:px-10 md:py-36"
           >
             <div className="mx-auto max-w-[1600px]">

@@ -10,6 +10,8 @@ type SplitTextProps = {
   delay?: number;
   stagger?: number;
   once?: boolean;
+  /** "mount" plays every time this component appears, including client-side returns. */
+  trigger?: "view" | "mount";
 };
 
 export function SplitText({
@@ -19,6 +21,7 @@ export function SplitText({
   delay = 0,
   stagger = 0.028,
   once = true,
+  trigger = "view",
 }: SplitTextProps) {
   const reduce = useReducedMotion();
   const words = text.split(" ");
@@ -41,8 +44,12 @@ export function SplitText({
                   key={`${char}-${ci}`}
                   className="split-char"
                   initial={{ y: "110%", opacity: 0 }}
-                  whileInView={{ y: "0%", opacity: 1 }}
-                  viewport={{ once, margin: "-10%" }}
+                  {...(trigger === "mount"
+                    ? { animate: { y: "0%", opacity: 1 } }
+                    : {
+                        whileInView: { y: "0%", opacity: 1 },
+                        viewport: { once, margin: "-10%" },
+                      })}
                   transition={{
                     duration: 0.9,
                     delay: delay + charIndex * stagger,

@@ -4,10 +4,12 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
+import { usePathname } from "next/navigation";
 
 export type CursorVariant = "default" | "hover" | "media" | "hidden";
 
@@ -36,12 +38,17 @@ const CursorContext = createContext<CursorApi>({
 
 export function CursorProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<CursorState>(initial);
+  const pathname = usePathname();
 
   const set = useCallback((next: Partial<CursorState>) => {
     setState((prev) => ({ ...prev, ...next }));
   }, []);
 
   const reset = useCallback(() => setState(initial), []);
+
+  useEffect(() => {
+    reset();
+  }, [pathname, reset]);
 
   const value = useMemo(
     () => ({ ...state, set, reset }),

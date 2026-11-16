@@ -1,14 +1,17 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import { LocalTime } from "./fx/LocalTime";
 import { ShaderField } from "./fx/ShaderField";
 import { SplitText } from "./fx/SplitText";
+import { caseStudies } from "@/content/cases";
 import { site } from "@/content/site";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
+  const pathname = usePathname();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -42,17 +45,19 @@ export function Hero() {
           </span>
         </div>
 
-        <div className="my-auto">
+        <div key={pathname} className="my-auto">
           <SplitText
             as="h1"
             text="Laura Mateo"
             className="display-xl block text-[clamp(3.2rem,15vw,15rem)]"
             stagger={0.035}
             delay={0.1}
+            trigger="mount"
           />
 
           <div className="mt-8 flex flex-col gap-8 md:mt-12 md:flex-row md:items-end md:justify-between">
             <motion.p
+              key={`${pathname}-line`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
@@ -83,7 +88,9 @@ export function Hero() {
               ↓
             </motion.span>
           </span>
-          <span>Portfolio — 05 Projects</span>
+          <span>
+            Portfolio — {String(caseStudies.length).padStart(2, "0")} Projects
+          </span>
         </div>
       </motion.div>
     </section>

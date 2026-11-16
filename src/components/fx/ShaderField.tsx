@@ -131,6 +131,7 @@ export function ShaderField({
 }: ShaderFieldProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ready, setReady] = useState(false);
+  const [attempt, setAttempt] = useState(0);
   const key = colors.join("|");
 
   useEffect(() => {
@@ -147,9 +148,11 @@ export function ShaderField({
       premultipliedAlpha: false,
       powerPreference: "high-performance",
     });
-    if (!gl) return;
-
-    const loseExt = gl.getExtension("WEBGL_lose_context");
+    if (!gl || gl.isContextLost()) {
+      if (attempt >= 8) return;
+      const retry = window.setTimeout(() => setAttempt((n) => n + 1), 120);
+      return () => window.clearTimeout(retry);
+    }
     const palette = key.split("|");
     const vs = compile(gl, gl.VERTEX_SHADER, VERT, "vertex");
     const fs = compile(gl, gl.FRAGMENT_SHADER, FRAG, "fragment");
@@ -205,9 +208,12 @@ export function ShaderField({
       if (canvas.width !== w || canvas.height !== h) {
         canvas.width = w;
         canvas.height = h;
-        gl.viewport(0, 0, w, h);
-        gl.uniform2f(uRes, w, h);
       }
+      // A route transition can reuse a canvas whose pixel dimensions are
+      // already correct. The WebGL program is new, however, so its viewport
+      // and resolution uniform must always be initialized.
+      gl.viewport(0, 0, w, h);
+      gl.uniform2f(uRes, w, h);
       sized = canvas.clientWidth > 0 && canvas.clientHeight > 0;
     };
 
@@ -220,6 +226,7 @@ export function ShaderField({
       e.preventDefault();
       lost = true;
       setReady(false);
+      setAttempt((n) => n + 1);
     };
     canvas.addEventListener("webglcontextlost", onLost);
 
@@ -256,11 +263,10 @@ export function ShaderField({
       gl.deleteShader(vs);
       gl.deleteShader(fs);
       gl.deleteBuffer(buffer);
-      loseExt?.loseContext();
       setReady(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, intensity]);
+  }, [key, intensity, attempt]);
 
   return (
     <div
